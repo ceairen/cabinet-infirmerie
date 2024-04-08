@@ -26,7 +26,7 @@ function App() {
               path="/accueil"
               element={<Navigate to="/" replace />}
             ></Route>
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </BrowserRouter>
       </main>
