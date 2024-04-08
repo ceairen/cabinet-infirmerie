@@ -1,0 +1,39 @@
+ul.HorizontalList {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul.HorizontalList > li {
+  position: relative;
+}
+
+ul.HorizontalList > li:not(:first-child, :last-child) {
+  margin: 0 50px;
+}
+
+ul.HorizontalList > li > svg {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: var(--appBlueColor);
+}
+
+ul.HorizontalList > li > h3 {
+  padding-left: 25px;
+}
+
+ul.HorizontalList > li > p {
+  text-align: justify;
+  color: var(--appGreyColor);
+}
+
+@media (max-width: 640px) {
+  ul.HorizontalList {
+    flex-direction: column;
+  }
+
+  ul.HorizontalList > li {
+    margin: inherit !important;
+  }
+}

@@ -1,0 +1,11 @@
+.Separator {
+  display: block;
+}
+
+.Separator > hr {
+  width: 100px;
+  height: 1px;
+  color: white;
+  border: none;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,37 @@
+.Section {
+  padding: var(--appGlobalPadding);
+  text-align: left;
+}
+
+.Section.Centered {
+  text-align: center;
+}
+
+.Section > h2 {
+  margin-bottom: 30px;
+}
+
+.Section > h2::before {
+  --separatorSize: 7px;
+  content: "";
+  position: absolute;
+  width: var(--separatorSize);
+  height: var(--separatorSize);
+  border-radius: 50%;
+  background-color: var(--appBlueColor);
+  left: calc(50% - (var(--separatorSize) / 2));
+  bottom: -10px;
+  border: 2px solid var(--appColor);
+  z-index: 999;
+}
+
+.Section > h2::after {
+  --separatorSize: 60px;
+  content: "";
+  position: absolute;
+  width: var(--separatorSize);
+  height: 1px;
+  background-color: var(--appBlueColor);
+  left: calc(50% - (var(--separatorSize) / 2));
+  bottom: -5px;
+}

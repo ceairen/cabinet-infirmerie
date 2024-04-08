@@ -1,0 +1,24 @@
+.Nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Nav > ul > li {
+  text-transform: uppercase;
+}
+
+.Nav > ul > li.Active > a {
+  color: var(--textColor);
+}
+
+.Nav > ul > li > a {
+  cursor: pointer;
+  color: var(--appGreyColor);
+}
+
+@media (max-width: 640px) {
+  .Nav > ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}

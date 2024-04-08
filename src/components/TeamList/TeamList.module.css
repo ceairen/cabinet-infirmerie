@@ -1,0 +1,46 @@
+ul.TeamList {
+  display: flex;
+  margin: 0 15px;
+  justify-content: center;
+}
+
+ul.TeamList > li {
+  width: 250px;
+  margin: 0 30px;
+}
+
+ul.TeamList > li > span {
+  --spanSize: 60px;
+  display: block;
+  margin: auto;
+  background-color: var(--appVeryVeryLightColor);
+  width: var(--spanSize);
+  height: var(--spanSize);
+  line-height: var(--spanSize);
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+ul.TeamList > li > span > svg {
+  transform: scale(2);
+}
+
+ul.TeamList > li > label {
+  display: block;
+}
+
+ul.TeamList > li > p {
+  color: var(--appGreyColor);
+  text-align: justify;
+}
+
+@media (max-width: 640px) {
+  ul.TeamList {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  ul.TeamList > li {
+    width: 80%;
+    margin: auto;
+  }
+}
