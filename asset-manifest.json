@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cabinet-infirmerie/static/css/main.1386e5d4.css",
-    "main.js": "/cabinet-infirmerie/static/js/main.79600557.js",
+    "main.js": "/cabinet-infirmerie/static/js/main.ab1a50db.js",
     "index.html": "/cabinet-infirmerie/index.html",
     "main.1386e5d4.css.map": "/cabinet-infirmerie/static/css/main.1386e5d4.css.map",
-    "main.79600557.js.map": "/cabinet-infirmerie/static/js/main.79600557.js.map"
+    "main.ab1a50db.js.map": "/cabinet-infirmerie/static/js/main.ab1a50db.js.map"
   },
   "entrypoints": [
     "static/css/main.1386e5d4.css",
-    "static/js/main.79600557.js"
+    "static/js/main.ab1a50db.js"
   ]
 }
