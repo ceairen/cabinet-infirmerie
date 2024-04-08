@@ -11,8 +11,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Separator from "../../components/Separator/Separator";
 import TeamList from "../../components/TeamList/TeamList";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [servicesList, setServicesList] = useState<
+    HorizontalListElement[] | null
+  >(null);
+
   function resolveServicesList(): HorizontalListElement[] {
     return [
       {
@@ -33,6 +38,10 @@ export default function Home() {
     ];
   }
 
+  useEffect(() => {
+    setServicesList((servicesList) => resolveServicesList());
+  }, []);
+
   return (
     <>
       <Section centered={true}>
@@ -41,7 +50,15 @@ export default function Home() {
       </Section>
       <Separator />
       <Section>
-        <HorizontalList list={resolveServicesList()} />
+        {/* J'utilise une props ici et non pas un appel local au composant pour
+          1- montrer une façon différente que pour TeamList
+          2- pour que ce composant soit réutilisable et non cantonné aux infos de la page d'accueil
+          */}
+        {servicesList ? (
+          <HorizontalList list={servicesList} />
+        ) : (
+          <label>Chargement...</label>
+        )}
       </Section>
       <Separator />
       <Section centered={true}>

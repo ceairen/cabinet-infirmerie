@@ -35,7 +35,7 @@ export default function TeamList() {
 
   return teamList ? (
     <ul className={styles.TeamList}>
-      {resolveTeamList().map(({ firstName, lastName, description }, i) => {
+      {teamList.map(({ firstName, lastName, description }, i) => {
         return (
           <li key={i}>
             <span>
